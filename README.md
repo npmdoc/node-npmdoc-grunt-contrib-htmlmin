@@ -3,7 +3,9 @@
 
 [![NPM](https://nodei.co/npm/grunt-contrib-htmlmin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-contrib-htmlmin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-contrib-htmlmin/build/screenCapture.npmPackageListing.svg)
 
@@ -100,72 +102,6 @@
     },
     "version": "2.3.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-contrib-htmlmin](#apidoc.module.grunt-contrib-htmlmin)
-1.  [function <span class="apidocSignatureSpan"></span>grunt-contrib-htmlmin (grunt)](#apidoc.element.grunt-contrib-htmlmin.grunt-contrib-htmlmin)
-1.  [function <span class="apidocSignatureSpan">grunt-contrib-htmlmin.</span>toString ()](#apidoc.element.grunt-contrib-htmlmin.toString)
-
-
-
-# <a name="apidoc.module.grunt-contrib-htmlmin"></a>[module grunt-contrib-htmlmin](#apidoc.module.grunt-contrib-htmlmin)
-
-#### <a name="apidoc.element.grunt-contrib-htmlmin.grunt-contrib-htmlmin"></a>[function <span class="apidocSignatureSpan"></span>grunt-contrib-htmlmin (grunt)](#apidoc.element.grunt-contrib-htmlmin.grunt-contrib-htmlmin)
-- description and source-code
-```javascript
-grunt-contrib-htmlmin = function (grunt) {
-  grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
-    var options = this.options();
-    var count = 0;
-
-    this.files.forEach(function (file) {
-      var min;
-      var src = file.src[0];
-
-      if (!src) {
-        return;
-      }
-
-      var max = grunt.file.read(src);
-
-      try {
-        min = minify(max, options);
-      } catch (err) {
-        grunt.warn(src + '\n' + err);
-        return;
-      }
-
-      count++;
-
-      grunt.file.write(file.dest, min);
-      grunt.verbose.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' → ' + prettyBytes(min.length
-));
-    });
-
-    grunt.log.writeln('Minified ' + chalk.cyan(count) + ' files' + (this.files.length !== count ? ' (' + chalk.red(this.files.length
- - count) + ' failed)' : ''));
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.grunt-contrib-htmlmin.toString"></a>[function <span class="apidocSignatureSpan">grunt-contrib-htmlmin.</span>toString ()](#apidoc.element.grunt-contrib-htmlmin.toString)
-- description and source-code
-```javascript
-toString = function () {
-    return toString;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
