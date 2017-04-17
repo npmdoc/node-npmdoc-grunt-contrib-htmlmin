@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/gruntjs/grunt-contrib-htmlmin#readme"
-
-    >grunt-contrib-htmlmin (v2.3.0)</a>
+    <a href="https://github.com/gruntjs/grunt-contrib-htmlmin#readme">grunt-contrib-htmlmin (v2.3.0)</a>
 </h1>
 <h4>Minify HTML</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-contrib-htmlmin">module grunt-contrib-htmlmin</a><ol>
 
@@ -108,7 +101,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">grunt-contrib-htmlmin = function (grunt) {
-  grunt.registerMultiTask(&#x27;htmlmin&#x27;, &#x27;Minify HTML&#x27;, function () {
+  grunt.registerMultiTask('htmlmin', 'Minify HTML', function () {
     var options = this.options();
     var count = 0;
 
@@ -125,19 +118,19 @@
       try {
         min = minify(max, options);
       } catch (err) {
-        grunt.warn(src + &#x27;\n&#x27; + err);
+        grunt.warn(src + '\n' + err);
         return;
       }
 
       count++;
 
       grunt.file.write(file.dest, min);
-      grunt.verbose.writeln(&#x27;Minified &#x27; + chalk.cyan(file.dest) + &#x27; &#x27; + prettyBytes(max.length) + &#x27; → &#x27; + prettyBytes(min.length
+      grunt.verbose.writeln('Minified ' + chalk.cyan(file.dest) + ' ' + prettyBytes(max.length) + ' â†’ ' + prettyBytes(min.length
 ));
     });
 
-    grunt.log.writeln(&#x27;Minified &#x27; + chalk.cyan(count) + &#x27; files&#x27; + (this.files.length !== count ? &#x27; (&#x27; + chalk.red(this.files.length
- - count) + &#x27; failed)&#x27; : &#x27;&#x27;));
+    grunt.log.writeln('Minified ' + chalk.cyan(count) + ' files' + (this.files.length !== count ? ' (' + chalk.red(this.files.length
+ - count) + ' failed)' : ''));
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -185,3 +178,4 @@
     ]
 </div>
 </div>
+</body></html>
