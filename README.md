@@ -1,4 +1,7 @@
-# api documentation for  [grunt-contrib-htmlmin (v2.3.0)](https://github.com/gruntjs/grunt-contrib-htmlmin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-contrib-htmlmin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-contrib-htmlmin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-htmlmin)
+# npmdoc-grunt-contrib-htmlmin
+
+#### basic api documentation for  [grunt-contrib-htmlmin (v2.3.0)](https://github.com/gruntjs/grunt-contrib-htmlmin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-contrib-htmlmin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-contrib-htmlmin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-htmlmin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-htmlmin)
+
 #### Minify HTML
 
 [![NPM](https://nodei.co/npm/grunt-contrib-htmlmin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-contrib-htmlmin)
@@ -100,7 +103,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "2.3.0"
+    "version": "2.3.0",
+    "bin": {}
 }
 ```
 
